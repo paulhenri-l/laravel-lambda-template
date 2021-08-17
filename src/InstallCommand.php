@@ -27,7 +27,7 @@ class InstallCommand extends Command
 
     protected function configure()
     {
-        $this->setDescription('Install the ecs template');
+        $this->setDescription('Install the lambda template');
 
         $this->addArgument(
             'project-name',

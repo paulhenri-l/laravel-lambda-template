@@ -1,6 +1,6 @@
 {
     "name": "paulhenri-l/laravel-lambda-template",
-    "description": "Configure your laravel project for ECS",
+    "description": "Configure your laravel project for Lambda",
     "type": "library",
     "license": "proprietary",
     "authors": [
