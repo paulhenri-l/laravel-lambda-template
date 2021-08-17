@@ -61,11 +61,12 @@ class InstallCommand extends Command
     {
         $this->output->writeln("<info>Installing dependencies</info>");
         foreach (static::$deps as $dep) {
-            $process = Process::fromShellCommandline(
-                sprintf('composer require %s -w', $dep),
+            $process = new Process(
+                ['composer', 'require', $dep, '-w'],
                 getcwd()
             );
 
+            $process->setTty(true);
             $process->run();
         }
     }

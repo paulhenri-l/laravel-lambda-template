@@ -1,0 +1,5 @@
+.git/*
+.idea/*
+terraform/*
+node_modules/*
+.env
