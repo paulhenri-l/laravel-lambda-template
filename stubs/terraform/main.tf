@@ -1,5 +1,11 @@
 terraform {
-  backend "s3" {}
+  backend "s3" {
+    bucket="phl-terraform-state"
+    region="eu-west-3"
+    key="phl-lara-base-serverless-tf"
+    dynamodb_table="terraform-lock"
+    profile="default"
+  }
 
   required_providers {
     aws = {
